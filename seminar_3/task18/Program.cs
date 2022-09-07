@@ -10,15 +10,15 @@ Console.WriteLine("Введите номер четверти");
     {
       Console.WriteLine("Диапазон координат: x>0, y>0"); 
     }
-    else if (number == 2)
+    if (number == 2)
     {
       Console.WriteLine("Диапазон координат: x<0, y>0"); 
     }
-    else if (number == 3)
+    if (number == 3)
     {
       Console.WriteLine("Диапазон координат: x<0, y<0"); 
     }
-    else if (number == 4)
+    if (number == 4)
     {
       Console.WriteLine("Диапазон координат: x>0, y<0"); 
     }
