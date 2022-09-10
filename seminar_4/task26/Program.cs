@@ -25,19 +25,42 @@
 
 
 
-Console.Write("ВВедите число: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int x = 0;
-if (number > 1)
+// Console.Write("ВВедите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int x = 0;
+// if (number > 1)
+// {
+//     for (int i = 1; number > 0; i++)
+//     {
+//         number = number / 10;
+//         x++;
+//     }
+//     Console.Write($"Количество цифр в числе = {x}");
+// }
+// else
+// {
+//     Console.Write("Введите корректное число.");
+// }
+
+
+int ReadNumber(string massage)
 {
-    for (int i = 1; number > 0; i++)
-    {
-        number = number / 10;
-        x++;
-    }
-    Console.Write($"Количество цифр в числе = {x}");
+Console.WriteLine(massage);                                        
+return Convert.ToInt32(Console.ReadLine()); 
 }
-else
+
+int GetCountOfDigits(int num)
 {
-    Console.Write("Введите корректное число.");
+   int count = 0; 
+   if (num == 0) count = 1;
+   while(num != 0)
+   {
+    num = num / 10;
+    count++;
+   }
+   return count;
 }
+
+int number = ReadNumber("Введите число:");
+int count = GetCountOfDigits(number);
+Console.WriteLine(count);
