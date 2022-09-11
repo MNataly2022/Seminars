@@ -14,4 +14,4 @@ while(tempnumber != 0)
     summa = summa + digit;
     tempnumber= tempnumber / 10;
 }
-Console.Write($"Сумма всех цифр в заданном числе равно: {Math.Abs(summa)}");
+Console.Write($"Сумма всех цифр в заданном числе равна: {Math.Abs(summa)}");
