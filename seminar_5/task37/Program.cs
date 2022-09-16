@@ -14,4 +14,5 @@ if (arr.Length % 2 != 0) // Если массив имеет нечетное ч
 {
     arrnew[arrnew.Length - 1] = arr[arr.Length / 2];
 }
+
 Console.Write(string.Join(", ", arrnew));

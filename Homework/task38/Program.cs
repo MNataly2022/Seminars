@@ -35,7 +35,7 @@ int Min(int[] arr)
     return min;
 }
 
-int[] array = GetArray(10, 0, 100);
+int[] array = GetArray(10, 1, 100);
 Console.WriteLine(string.Join(", ", array));
 int Maximum = Max(array);
 Console.WriteLine($"Максимальный элемент массива= {Maximum}");
