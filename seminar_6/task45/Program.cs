@@ -24,10 +24,3 @@ for(int i = 0; i < arr.Length; i++)
 
 Console.WriteLine($"Исходный массив = {string.Join(", ", arr)}");
 Console.WriteLine($"Скопированный массив = {string.Join(", ", copiedArray)}");
-
-// int a = 1;
-// int b = a;
-
-// a = 6;
-// Console.WriteLine(a);
-// Console.WriteLine(b);
