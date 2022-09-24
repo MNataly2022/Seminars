@@ -54,7 +54,7 @@ if (x < 0 || y < 0)
 {
     Console.WriteLine("Вы ввели отрицательный индекс");
 }
-else if (x > m || y > n)
+else if (x > m -1 || y > n -1)
 {
     Console.WriteLine("ВЫ ввели индекс за пределами массива");
 }
