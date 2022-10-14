@@ -12,9 +12,15 @@ for (int i = 0; i < array.Length; i++)
 {
     if (array[i].Length <= 3)
     {
-        if (find) Console.Write("\", \"");
+        if (find)
+        {
+            Console.Write("\", \"");
+        }
+        else
+        {
+            find = true;
+        }
         Console.Write(array[i]);
-        find = true;
     }
 }
 Console.Write("\"]");

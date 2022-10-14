@@ -40,10 +40,10 @@ void ChangeMatrix(int[,] matrix)
 {
     for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for (int j = 0; j < matrix.GetLength(1) - 1; j++)
+        for (int j = 0; j < matrix.GetLength(1)-1; j++)
         {
             int minPosition = j;
-            for (int k = j + 1; k < matrix.GetLength(1); k++)
+            for (int k = j+1; k < matrix.GetLength(1); k++ )
             {
                 if (matrix[i, k] < matrix[i, minPosition])
                 {
