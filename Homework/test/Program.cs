@@ -4,8 +4,7 @@
 // лучше обойтись исключительно массивами.
 
 string[] array = { "hello", "2", "world", ":-)" };
-Console.WriteLine($"Первоначальный массив:\n[\"{string.Join("\", \"", array)}\"]");
-Console.Write("Сформированный массив:\n[\"");
+Console.Write("Массив с элементами меньше 3-х символов:\n[\"");
 
 bool find = false;
 for (int i = 0; i < array.Length; i++)
